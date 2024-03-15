@@ -1,0 +1,283 @@
+header{
+    font-family: "Shrikhand",cursive;
+    text-align: center;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 /25%);
+    padding: 0.3rem;
+    margin: 0;
+    position: relative;
+}
+
+body{
+    margin: 0px;
+    font-family: "Roboto",sans-serif;
+}
+
+
+main .city{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color:#F3F3F3;
+    text-align: center;
+
+}
+
+main .city i{
+    font-size: 1,5rem;
+}
+
+.explorer{
+     text-align: center;
+}
+.explorer h2{
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+.explorer p{
+    font-size: 1rem;
+}
+
+.explorer button{
+    color: white;
+    font-weight: 100;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 2px 1px 8px -3px #000000;
+    background-image: linear-gradient(to top,rgba(147,86,220,0.9),rgba(255,121,218,0.9));
+    transition:transform 200ms;
+    margin-top: 1rem;
+}
+.explorer button:hover{
+    transform: scale(1.02);
+    opacity: 0.9;
+}
+.city h2{
+    margin: 0;
+}
+.explorer h2{
+    margin: 0;
+}
+.menu h2{
+    margin-bottom: 0px;
+}
+h2 {
+    margin-left: 10rem;
+    padding: 20px;
+}
+h3{
+    margin: -10px;
+    padding-top: 1rem;
+    margin-left: 10px;
+}
+.tuto li{
+    background-color: #F6F6F6;
+    padding: 1rem 2rem;
+    flex-grow: 1;
+    border-radius: 1rem;
+    box-shadow: 2px 1px 8px -3px #000000;
+    list-style-type: none;
+    position: relative;
+}
+.tuto{
+    counter-reset: steps;
+}
+ .tuto li::before{
+    content: counter(steps);
+    counter-increment:steps;
+    color: white;
+    background-color: #9356DC;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 8px;
+    left: -1rem;
+ }
+
+.tuto li:hover{
+    transform: scale(1.02);
+}
+.tuto ol{
+    display: flex;
+    gap: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    padding: 20px;
+    
+   
+}
+.tuto li{
+    margin-right: 5px;
+}
+
+
+.menucard{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-left: 8rem;
+    margin-right: 8rem;
+    gap: 2rem;
+    
+}
+.new{
+    
+    position: relative;
+
+
+}
+.new::before{
+    content: "Nouveau";
+    position: absolute;
+    border-radius: 3px;
+    height: 2rem;
+    width: 5rem;
+    background-color: #99E2D0;
+    color:darkcyan;
+    display: grid;
+    place-items: center;
+    top: 1rem;
+    right: 1rem;
+}
+.menu{
+    background-color: #F6F6F6;
+    margin: 0;
+
+}
+
+.cardimage{
+    height: 15rem;
+    width: 30rem;
+    gap: 20px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 2px 1px 8px -3px #000000;
+
+}
+.card{
+    border-radius: 20px;
+    margin:40px;
+    
+}
+.carddescription{
+    background-color:white;
+    height: 6rem;
+    width: 30rem;
+    box-shadow: 2px 1px 8px -3px #000000;
+    border-radius: 0 0 20px 20px;
+    position: relative;
+
+}
+.carddescription p{
+    margin-left: 10px;
+    
+    
+}
+.menu a {
+    text-decoration: none;
+    color:inherit;
+    
+}
+.fa-heart{
+     font-size: 2rem;
+     position: absolute;
+     right: 1rem;
+     top: 50%;
+     transform: translateY(-50%);
+     
+
+}
+.fas{
+    color: transparent;
+    background-image:linear-gradient(to top,rgba(147,86,220,0.9),rgba(255,121,218,0.9)); 
+    background-clip: text;
+    opacity: 0;
+    
+}
+.fas:hover{
+    opacity: 1;
+}
+
+
+
+.foot p{
+    font-family:"Shrikhand",cursive;
+    color: white;
+    margin-left: 40px;
+    margin-top: 0px;
+    
+} 
+.foot{
+    
+    background-color:#353535;    
+}
+.foot li{
+    padding: 5px;
+    color: white;
+    list-style-type: none;
+    
+}
+.foot ul{
+    margin: 0;
+}
+.fa-utensils{
+    color: white;
+    opacity: 1;
+}
+.fa-hands-helping{
+    color: white;
+    opacity: 1;
+}
+
+@media (max-width: 768px){
+    .tuto h2{
+        margin-left: 0;
+    }
+    .menu h2{
+        margin-left: 0;
+    }
+
+    .tuto ol{
+      flex-direction: column;
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+  
+  .menucard{
+      display:flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-left: 0;
+      margin-right: 0;
+      
+  }
+  .card{
+    margin: 20px;
+  }
+  .cardimage{
+      height: 15rem;
+      width: 100%;
+      gap: 5px;
+  
+  }
+  .carddescription{
+       width: 100%;
+       height: 6rem;
+  }
+  .foot{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+  }
+  .foot p{
+      display: flex;
+      flex-direction: column;
+  }
+  }
+
+
+   
