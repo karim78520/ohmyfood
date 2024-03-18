@@ -35,7 +35,7 @@ h2 {
     margin: 0;
     padding: 2rem 1rem;
 }
-h3{
+.titremenu{
     margin:0px;
     font-weight: 300;
     padding-left: 25px;
@@ -43,13 +43,13 @@ h3{
     padding-top: 35px;
     
 }
-h3{
+.titremenu{
     position: relative;
     text-decoration: none;
-    left: 50px;
+    left: 100px;
     bottom: 20px;
 }
-h3::before{
+.titremenu::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -137,6 +137,7 @@ h4{
 } */
 .check:hover {
     width: 100px;
+    background-color: #99E2D0;
 }
 .fa-check:hover {
     display: inline;
@@ -164,7 +165,10 @@ h4{
 } */
 .fas:hover{
    opacity: 1;
+   
 }
+
+
 .btn-menu {
     color: white;
     font-weight: 100;
@@ -175,7 +179,6 @@ h4{
     box-shadow: 2px 1px 8px -3px #000000;
     background-image: linear-gradient(to top,rgba(147,86,220,0.9),rgba(255,121,218,0.9));
     transition: transform 200ms;
-    width: 30%;
     margin: 40px 0;
 }
 .menus button:hover{
@@ -188,14 +191,14 @@ h4{
     font-family:"Shrikhand",cursive;
     color: white;
     margin-left: 40px;
-    margin-top: 0;
+    
 } 
 .footer {
     background-color:#353535;    
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    height: 10rem;
+    height: 12rem;
     padding: 20px;
 }
 .title-footer {
@@ -227,7 +230,18 @@ h4{
     opacity: 1;
     margin-right: 3px;
 }
+.footer a{
+    text-decoration: none;
+    color:white;
+}
+    
 @media (max-width: 768px){
+    .restomain{
+        width:100% ;
+    }
+    .titremenu{
+        left:20px ;
+    }
     .footer{
         display: flex;
         flex-direction: column;

@@ -191,32 +191,36 @@ h3{
      
 
 }
-.fas{
+.coeur{
     color: transparent;
     background-image:linear-gradient(to top,rgba(147,86,220,0.9),rgba(255,121,218,0.9)); 
     background-clip: text;
     opacity: 0;
     
 }
-.fas:hover{
+.coeur:hover{
     opacity: 1;
 }
-
-
+.fas{
+    color: grey;
+}
+.icon{
+    color: #000000;
+}
 
 
 .footer p{
     font-family:"Shrikhand",cursive;
     color: white;
     margin-left: 40px;
-    margin-top: 0;
+    
 } 
 .footer {
     background-color:#353535;    
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    height: 10rem;
+    height: 12rem;
 }
 .title-footer {
     color: #fff;
@@ -246,6 +250,10 @@ h3{
     opacity: 1;
     margin-right: 3px;
 }
+.footer a{
+    text-decoration: none;
+    color:white;
+}
 
 @media (max-width: 768px){
     .tuto h2{
@@ -257,7 +265,7 @@ h3{
 
     .tuto ol{
       flex-direction: column;
-      margin-left: 10px;
+      margin-left: 20px;
       margin-right: 20px;
     }
   
