@@ -62,6 +62,9 @@ h2 {
 
 h4{
     margin-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
 }
 .restomain{
     display: flex;
@@ -106,6 +109,10 @@ h4{
 }
 .menucategory{
     border-radius: 1rem;
+    overflow: hidden;
+}
+.menudescription{
+    overflow: hidden;
 }
 .prix{
     margin-left: auto;
@@ -124,51 +131,57 @@ h4{
     overflow: hidden;
     width: 80%;
     margin-bottom: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    animation: appear 3s;
 }
+@keyframes appear{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    35% {
+        opacity: 0.25;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+  
 .menudescription p {
     font-weight: 300;
     margin-left: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis
 }
-.menuitems .check{
+.check{
     background-color:#99E2D0;
     padding: 1rem;
     margin-right: -82px;
     width: 50px;
+    display: grid;
+    place-items: center;
+    transition:all 1s ;
+ 
 }
-/* .check {
-    background-color:#99E2D0;
-    padding: 1rem;
-    margin-right: -82px;
-    width: 50px;
-} */
-:hover {
-    width: 100px;
-    background-color: #99E2D0;
+.menuitems:hover .check{
+    margin-right: 0;
 }
-.menuitems .check:hover {
-    display: inline;
-    position: absolute;
-    top: 26px;
-    left: 20px;
-    background-color:#99E2D0;
-    border-radius: 15px;
-    font-size: 1.2em;
+.fa-check{
+    background: white;
+    border-radius: 50%;
+    width: 2rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    color: #99E2D0;
 }
 
-/* .fa-heart{
-    font-size: 2rem;
-    position: absolute;
-    right: 1rem;
-    transform: translateX(-9rem);
-    
 
-} */
-/* .fas{
-   color: transparent;
-   background-image:linear-gradient(to top,rgba(147,86,220,0.9),rgba(255,121,218,0.9)); 
-   background-clip: text;
-   opacity: 0;
-} */
 .fas:hover{
    opacity: 1;
    
