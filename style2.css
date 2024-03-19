@@ -129,17 +129,23 @@ h4{
     font-weight: 300;
     margin-left: 20px;
 }
+.menuitems .check{
+    background-color:#99E2D0;
+    padding: 1rem;
+    margin-right: -82px;
+    width: 50px;
+}
 /* .check {
     background-color:#99E2D0;
     padding: 1rem;
     margin-right: -82px;
     width: 50px;
 } */
-.check:hover {
+:hover {
     width: 100px;
     background-color: #99E2D0;
 }
-.fa-check:hover {
+.menuitems .check:hover {
     display: inline;
     position: absolute;
     top: 26px;
