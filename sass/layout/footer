@@ -1,0 +1,50 @@
+
+
+.footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  height: 12rem;
+    .footer p {
+    font-family: "Shrikhand", cursive;
+    color: white;
+    margin-left: 40px;
+  }
+   .title-footer {
+  color: #fff;
+  font-size: 1.1em;
+  }
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer li {
+  padding: 5px;
+  color: white;
+  list-style-type: none;
+}
+
+.footer ul {
+  margin: 0;
+}
+
+.fa-utensils {
+  color: white;
+  opacity: 1;
+  margin-right: 3px;
+}
+
+.fa-hands-helping {
+  color: white;
+  opacity: 1;
+  margin-right: 3px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
